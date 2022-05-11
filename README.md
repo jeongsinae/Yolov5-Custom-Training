@@ -6,13 +6,24 @@
 #### 디렉토리 구조
 yoloV5 폴더 안에 coco128 폴더 생성
 
+#### 본인 PC 기준
 * yoloV5
   - coco128
     + images
       + train2017
     + labels
       + train2017    
-      
+    
+    
+#### 공식 디렉토리 구조 
+* yoloV5
+* data
+    - images
+      + train
+      + valid
+    - labels
+      + train
+      + valid
       
 data 폴더 안 coco128.yaml을 열어 detection 할 객체로 수정
 
