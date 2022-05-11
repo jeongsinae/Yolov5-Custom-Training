@@ -39,10 +39,10 @@ yoloV5 폴더 안에 coco128 폴더 생성
 #### Detection
 <pre><code>python detect.py --source ./inference/images/ --weights runs/exp()/weights/best.pt --conf 0.5</code></pre>
 
---img : 이미지 크기
---batch : 배치 크기
---epochs : epoch 크기
---data : 데이터파일 (data.yaml 파일 경로 지정)
---cfg : 위에서 정한 모델 크기 (yolov5/models 폴더에 yaml파일로 저장되어 있음)
---weights : 미리 학습된 모델로 학습할 경우 (yolov5s.pt 등의 형식으로 다운로드 가능)
---name : 학습된 모델의 이름
+--img : 이미지 크기   
+--batch : 배치 크기   
+--epochs : epoch 크기   
+--data : 데이터파일 (data.yaml 파일 경로 지정)   
+--cfg : 위에서 정한 모델 크기 (yolov5/models 폴더에 yaml파일로 저장되어 있음)   
+--weights : 미리 학습된 모델로 학습할 경우 (yolov5s.pt 등의 형식으로 다운로드 가능)   
+--name : 학습된 모델의 이름   
