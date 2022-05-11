@@ -11,4 +11,6 @@ yoloV5 폴더 안에 coco128 폴더 생성
     + labels
       + train2017    
 
-<img src="https://user-images.githubusercontent.com/49273782/167884652-0748e77f-f7fa-4104-897a-216e54049a55.png"  width="500" height="370">
+data 폴더 안 coco128.yaml을 열어 detection 할 객체로 수정
+<img src="https://user-images.githubusercontent.com/49273782/167886115-5f422531-6ecd-4f1b-bc42-0097096f0dd7.png"  width="500" height="350">
+
