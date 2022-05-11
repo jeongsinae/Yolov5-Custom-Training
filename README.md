@@ -32,6 +32,8 @@ yoloV5 폴더 안에 coco128 폴더 생성
 
 <img src="https://user-images.githubusercontent.com/49273782/167886115-5f422531-6ecd-4f1b-bc42-0097096f0dd7.png" width="500" height="250">
 
-
+#### Training
+<pre><code>{python train.py --img 640 --batch 8 --epochs 50 --data=C:/Users/MSDL-DESK-02/yolov5/data/custom.yaml --cfg=C:/Users/MSDL-DESK-02/yolov5/models/yolov5s.yaml --device 0
+}</code></pre>
 
 
