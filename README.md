@@ -35,4 +35,6 @@ yoloV5 폴더 안에 coco128 폴더 생성
 #### Training
 <pre><code>python train.py --img 640 --batch 8 --epochs 50 --data=C:/Users/MSDL-DESK-02/yolov5/data/custom.yaml --cfg=C:/Users/MSDL-DESK-02/yolov5/models/yolov5s.yaml --device 0</code></pre>
 
+#### Detection
+<pre><code>python detect.py --source=C:/Users/MSDL-DESK-02/yolov5/data/images/test.jpg --weights=C:/Users/MSDL-DESK-02/yolov5/runs/train/exp/weights/best.pt --img 416 --conf 0.5 --save-txt</code></pre>
 
