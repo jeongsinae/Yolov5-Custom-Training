@@ -33,8 +33,16 @@ yoloV5 폴더 안에 coco128 폴더 생성
 <img src="https://user-images.githubusercontent.com/49273782/167886115-5f422531-6ecd-4f1b-bc42-0097096f0dd7.png" width="500" height="250">
 
 #### Training
-<pre><code>python train.py --img 640 --batch 8 --epochs 50 --data=C:/Users/MSDL-DESK-02/yolov5/data/custom.yaml --cfg=C:/Users/MSDL-DESK-02/yolov5/models/yolov5s.yaml --device 0</code></pre>
+<pre><code>python train.py --img 640 --batch 16 --epochs 20 --data ~/dataset/data.yaml --cfg ./models/yolov5s.yaml --weights yolov5s.pt --name yolov5_coco</code></pre>
+
 
 #### Detection
-<pre><code>python detect.py --source=C:/Users/MSDL-DESK-02/yolov5/data/images/test.jpg --weights=C:/Users/MSDL-DESK-02/yolov5/runs/train/exp/weights/best.pt --img 416 --conf 0.5 --save-txt</code></pre>
+<pre><code>python detect.py --source ./inference/images/ --weights runs/exp()/weights/best.pt --conf 0.5</code></pre>
 
+--img : 이미지 크기
+--batch : 배치 크기
+--epochs : epoch 크기
+--data : 데이터파일 (data.yaml 파일 경로 지정)
+--cfg : 위에서 정한 모델 크기 (yolov5/models 폴더에 yaml파일로 저장되어 있음)
+--weights : 미리 학습된 모델로 학습할 경우 (yolov5s.pt 등의 형식으로 다운로드 가능)
+--name : 학습된 모델의 이름
