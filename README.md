@@ -29,11 +29,13 @@ yoloV5 폴더 안에 coco128 폴더 생성
 ####  coco128.yaml 수정
 * data
     - coco128.yaml -> detection 할 객체로 수정
+    - train: , val: 주소를 데이터가 있는 주소로 바꿔줌
 
-<img src="https://user-images.githubusercontent.com/49273782/167886115-5f422531-6ecd-4f1b-bc42-0097096f0dd7.png" width="500" height="250">
+<img src="https://user-images.githubusercontent.com/49273782/170204037-4befbe48-6f92-4308-8f3b-0baf0efc1e78.PNG" width="500" height="250">
 
 #### Training
 <pre><code>python train.py --img 640 --batch 16 --epochs 20 --data ~/dataset/data.yaml --cfg ./models/yolov5s.yaml --weights yolov5s.pt --name yolov5_coco</code></pre>
+
 
 
 #### Detection
